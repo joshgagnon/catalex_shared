@@ -1,0 +1,12 @@
+{
+  "name": "catalex_shared",
+  "version": "1.0.0",
+  "description": "Shared styles and assets across catalex suite",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshgagnon/catalex_shared.git"
+  },
+  "private": true,
+  "author": "Josh Gagnon",
+  "homepage": "https://github.com/joshgagnon/catalex_shared"
+}
