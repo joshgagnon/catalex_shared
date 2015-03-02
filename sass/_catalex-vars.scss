@@ -1,4 +1,5 @@
 $white: #ffffff;
+$deep-red: #a6171d;
 
 $body-bg: $white;
 
@@ -7,8 +8,10 @@ $text-color: #231f20;
 $brand-primary: #d11820;
 $brand-success: #5cb85c; // TODO
 $brand-info: #5bc0de; // TODO
-$brand-warning: #f0ad4e; // TODO
+$brand-warning: #f26735;
 $brand-danger: #d9534f; // TODO
+
+$facebook-blue: #3b5998;
 
 $font-family-sans-serif: "Ubuntu", sans-serif;
 
@@ -25,6 +28,8 @@ $headings-font-family: "Ubuntu", sans-serif;
 $headings-font-weight: 400;
 $headings-line-height: 1.2;
 
+$border-radius-base: 4px;
+
 $btn-font-weight: 300;
 $btn-primary-border: transparent;
 $btn-success-border: transparent;
@@ -33,7 +38,7 @@ $btn-warning-border: transparent;
 $btn-danger-border: transparent;
 
 $navbar-height: 116px;
-$navbar-default-bg: #a6171d;
+$navbar-default-bg: $deep-red;
 $navbar-default-color: $white;
 $navbar-default-link-color: $navbar-default-color;
 $navbar-default-link-hover-color: $white;
@@ -46,6 +51,9 @@ $navbar-border-radius: 0;
 $navbar-default-toggle-hover-bg: $navbar-default-link-hover-bg;
 $navbar-default-toggle-icon-bar-bg: $white;
 $navbar-default-toggle-border-color: transparent;
+
+$footer-bg: #141414;
+$footer-text: #595757;
 
 $panel-bg: #f9f9f9;
 $panel-body-padding: 15px;

@@ -15,6 +15,9 @@ h3, h4 {
 .navbar {
 	border: none;
 }
+.navbar-collapse {
+	position: relative;
+}
 @media (min-width: $screen-sm-min) {
 	.navbar {
 		@include nav-header;
@@ -33,8 +36,8 @@ h3, h4 {
 	}
 }
 .navbar-header .pull-left img {
-	max-height: $navbar-height - $line-height-computed;
-	margin-top: $line-height-computed / 2;
+	max-height: $navbar-height - $line-height-computed * 2;
+	margin-top: $line-height-computed;
 
 	@media (max-width: $screen-xs-max) {
 		margin-left: $grid-gutter-width / 2;
@@ -54,6 +57,19 @@ h3, h4 {
 	border-radius: 0;
 	min-width: 100%;
 	box-shadow: none;
+}
+
+.chev-left, .chev-right {
+	width:auto;
+	height: 100%;
+	position: absolute;
+}
+.chev-left {
+	left: -133px;
+}
+.chev-right {
+	@extend .hidden-sm;
+	right: -133px;
 }
 
 .panel-default {
