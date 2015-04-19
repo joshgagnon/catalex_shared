@@ -22,6 +22,10 @@ h3, h4 {
 	.navbar {
 		@include nav-header;
 	}
+	ul.navbar-nav {
+		min-width: 1px;
+		min-height: 116px;
+	}
 }
 @media (max-width: $screen-xs-max) {
 	.navbar-header {
