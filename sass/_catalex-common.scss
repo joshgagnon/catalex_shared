@@ -23,6 +23,7 @@ h3, h4 {
 	ul.navbar-nav {
 		min-width: 1px;
 		min-height: 116px;
+        margin-left: 40px;
 	}
 }
 @media (max-width: $screen-xs-max) {
@@ -42,13 +43,23 @@ h3, h4 {
 		margin-left: $grid-gutter-width / 2;
 	}
 }
-.navbar-nav > li > a {
-	font-size: 22px;
+.navbar {
+    .navbar-nav > li > a {
+        color:$white;
 
-	@media (min-width: $screen-sm-min) {
-		padding-top: $navbar-padding-vertical + 10px;
-		padding-bottom: $navbar-padding-vertical - 10px;
-	}
+        font-size:1.5em;
+    	@media (min-width: $screen-sm-min) {
+    		padding-top: $navbar-padding-vertical + 30px;
+    		padding-bottom: $navbar-padding-vertical - 10px;
+    	}
+        &:hover{
+            color: $header-link-hover;
+        }
+    }
+    .navbar-nav.navbar-right > li > a {
+        padding:4px;
+        font-size:1em;
+    }
 }
 
 .navbar-nav > li > .dropdown-menu {
@@ -67,14 +78,26 @@ h3, h4 {
 
     left: 70px;
     transition: left .2s ease-in-out;
+
+}
+div.chev-left{
+    background-image: url(/images/left-chevron.png);
+    width: 106px;
+    height: 100%;
+    background-size: contain;
 }
 .chev-right {
     @extend .visible-lg-block;
     right: 313px;
 }
+div.chev-right{
+    background-image: url(/images/right-chevron.png);
+    width: 106px;
+    height: 100%;
+    background-size: contain;
+}
 
 .panel-default {
-	border-width: 3px;
 
 	.panel-heading {
 		font-size: 19px;
