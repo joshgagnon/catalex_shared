@@ -6,10 +6,11 @@ h3, h4 {
 	color: $text-color;
 }
 
-@mixin nav-header {
-	background-image: url('/images/nav-bg.png');
-	background-repeat: no-repeat;
-	background-position: center center;
+.navbar{
+    background-color: $header-background;
+    background-image: $header-image;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .navbar {
@@ -19,18 +20,12 @@ h3, h4 {
 	position: relative;
 }
 @media (min-width: $screen-sm-min) {
-	.navbar {
-		@include nav-header;
-	}
 	ul.navbar-nav {
 		min-width: 1px;
 		min-height: 116px;
 	}
 }
 @media (max-width: $screen-xs-max) {
-	.navbar-header {
-		@include nav-header;
-	}
 	.navbar-collapse {
 		border: none;
 		> ul {
@@ -65,15 +60,17 @@ h3, h4 {
 
 .chev-left, .chev-right {
 	width:auto;
-	height: 100%;
 	position: absolute;
 }
 .chev-left {
-	left: -133px;
+    @extend .hidden-xs;
+
+    left: 70px;
+    transition: left .2s ease-in-out;
 }
 .chev-right {
-	@extend .hidden-sm;
-	right: -133px;
+    @extend .visible-lg-block;
+    right: 313px;
 }
 
 .panel-default {
