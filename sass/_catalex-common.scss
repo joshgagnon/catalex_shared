@@ -11,19 +11,26 @@ h3, h4 {
     background-image: $header-image;
     background-repeat: no-repeat;
     background-position: center center;
-}
-
-.navbar {
 	border: none;
+    //height: $navbar-height-sml;
+    transition: height .2s ease-in-out;
+    @media (min-width: $screen-sm-min) {
+        height: $navbar-height;
+    }
 }
 .navbar-collapse {
 	position: relative;
+    box-shadow:none;
 }
+
 @media (min-width: $screen-sm-min) {
 	ul.navbar-nav {
 		min-width: 1px;
-		min-height: 116px;
-        margin-left: 40px;
+        min-height: $navbar-height;
+        &.navbar-right{
+            position: absolute;
+            right: 0;
+        }
 	}
 }
 @media (max-width: $screen-xs-max) {
@@ -35,6 +42,7 @@ h3, h4 {
 		}
 	}
 }
+
 .navbar-header .pull-left img {
 	max-height: $navbar-height - $line-height-computed * 2;
 	margin-top: $line-height-computed;
@@ -52,13 +60,16 @@ h3, h4 {
     		padding-top: $navbar-padding-vertical + 30px;
     		padding-bottom: $navbar-padding-vertical - 10px;
     	}
-        &:hover{
+        &:hover, &:focus{
             color: $header-link-hover;
         }
+
     }
-    .navbar-nav.navbar-right > li > a {
-        padding:4px;
-        font-size:1em;
+    @media (min-width: $screen-sm-min) {
+        .navbar-nav.navbar-right > li > a {
+            padding:4px;
+            font-size:1em;
+        }
     }
 }
 
@@ -85,6 +96,8 @@ div.chev-left{
     width: 106px;
     height: 100%;
     background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .chev-right {
     @extend .visible-lg-block;
@@ -95,21 +108,9 @@ div.chev-right{
     width: 106px;
     height: 100%;
     background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-.panel-default {
 
-	.panel-heading {
-		font-size: 19px;
-		color: $brand-primary;
-		border-color: $panel-inner-border;
-	}
-}
 
-label, .form-label {
-	font-size: 14px;
-}
-
-.btn {
-	min-width: 170px;
-}
