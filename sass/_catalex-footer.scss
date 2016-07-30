@@ -22,7 +22,7 @@ footer{
 }
 body{
     margin-bottom: $footer-height;
-    @media (min-width: $screen-sx-min) {
+    @media (min-width: $screen-xs-min) {
         margin-bottom: $footer-height-xs;
     }
 }
