@@ -1,0 +1,28 @@
+$footer-height: 150px;
+$footer-height-xs: 220px;
+
+
+footer{
+    height: $footer-height;
+    background-color: $text-color;
+    color: $gray-text;
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align:center;
+    font-size:0.8em;
+    a {
+        color: $light-red;
+        margin: 0 10px;
+    }
+    .container{
+    background-color: $text-color;
+    }
+}
+body{
+    margin-bottom: $footer-height;
+    @media (min-width: $screen-sx-min) {
+        margin-bottom: $footer-height-xs;
+    }
+}

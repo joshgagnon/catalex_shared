@@ -37,6 +37,10 @@ $btn-info-border: transparent;
 $btn-warning-border: transparent;
 $btn-danger-border: transparent;
 
+$btn-primary-color: white;
+$btn-primary-bg: $light-red;
+$btn-primary-border: $light-red;
+
 $navbar-height: 100px;
 $navbar-height-sml: 50px;
 $navbar-default-bg: $deep-red;
@@ -73,3 +77,8 @@ $header-image: url('/images/nav-bg.png');
 $left-chevron: url('/images/left-chevron.png');
 $right-chevron: url('/images/right-chevron.png');
 $header-link-hover: #3d3d3d;
+
+$light-red: rgb(197, 27, 36);
+$light-gray: #efefef;
+$gray-text: #756f6f;
+$orange: #e74c3c;
