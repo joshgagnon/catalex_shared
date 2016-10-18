@@ -1,0 +1,123 @@
+// visibility for fragments
+
+@import '_catalex-legislation-base';
+
+.fragment .legislation{
+    h1,h2,h3,h4,h5, .cover, .empowering-prov-layout{
+        display:none;
+    }
+    .current, .prov{
+    h1,h2,h3,h4,h5, .cover{
+        display:block;
+    }
+    }
+}
+.legislation .label{
+    font-weight: inherit;
+      cursor:pointer;
+}
+
+
+.history-note{
+    display:none;
+}
+.notes .results-container .history-note{
+    display: inherit;
+
+}
+
+.underlines .results-container .legislation a{
+    text-decoration: underline;
+    color:#337ab7;
+
+}
+
+.underlines .results-container .legislation{
+    h1,h2,h3,h4,h5,h6 {
+        a{
+            text-decoration: none;
+            color:#000;
+        }
+    }
+}
+.underlines .results-container .legislation a.def-popover{
+    color:#000;
+    text-decoration: none;
+    border-bottom: 1px solid #00BD00;
+  }
+
+.legislation a,
+.legislation a.def-popover,
+.legislation a.def-popover{
+    color:#000;
+}
+
+.definition-result{
+    // SUPER HACK DELETE AFTER FINISHING RERENDER OF DEFS
+    span.label.focus-link {
+    float: left;
+    margin-left: -2.6087em;
+    padding-right: 0.5em;
+    }
+    ul.label-para {
+        margin-left: 40px;
+        list-style: none;
+    }
+    p.label.labelled{
+        white-space: normal;
+    }
+
+
+}
+
+.legislation {
+    // fixed margin collapse, for height calculations
+    *[data-location], *[data-hook]{
+        overflow: hidden;
+        -webkit-overflow-scrolling: auto;
+    }
+    .prov *, .label-para *{
+        overflow:visible;
+    }
+    .em{
+        font-style:italic;
+    }
+    .row {
+
+    }
+      .row:before, .row:after {
+        content: initial;
+        display: intial;
+    }
+
+     p.house,  h1.sop-heading, p.sop-date {
+        text-align: center;
+        font-size: 1.7em;
+        font-weight: bold;
+        line-height: 100%;
+    }
+     ul.list {
+        margin-left: 0
+    }
+
+     ul.list li {
+        margin-left: 3em
+    }
+
+     ul.list li.bull {
+        list-style-type: disc;
+        display: list-item;
+        margin-left: 1.2em;
+        padding-left: 2em
+    }
+
+    div.cover-reprint-note{
+        border-top-width:0px;
+        border-bottom-width:0px;
+    }
+     div.para{
+        //margin-top:0;
+     }
+}
+
+
