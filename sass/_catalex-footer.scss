@@ -1,5 +1,5 @@
-$footer-height: 110px;
-$footer-height-xs: 130px;
+$footer-height: 115px;
+$footer-height-xs: 150px;
 
 
 footer{
@@ -12,6 +12,7 @@ footer{
     bottom: 0;
     text-align:center;
     font-size:0.8em;
+    overflow-y:hidden;
     a {
         color: $light-red;
         margin: 0 10px;
