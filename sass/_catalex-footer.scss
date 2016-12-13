@@ -1,11 +1,11 @@
-$footer-height: 115px;
-$footer-height-xs: 150px;
+$footer-height: 110px;
+$footer-height-xs: 130px;
 
 
 footer{
-    height: $footer-height-xs;
-    @media (max-width: $screen-sm-min) {
-        height: $footer-height;
+    //height: $footer-height-xs;
+    @media (min-width: $screen-sm-min) {
+        //height: $footer-height;
     }
 
     background-color: $text-color;
