@@ -4,6 +4,10 @@ $footer-height-xs: 150px;
 
 footer{
     height: $footer-height;
+    @media (min-width: $screen-xs-min) {
+        height: $footer-height-xs;
+    }
+
     background-color: $text-color;
     color: $gray-text;
     position:absolute;
