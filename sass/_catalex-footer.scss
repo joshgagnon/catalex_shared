@@ -3,9 +3,9 @@ $footer-height-xs: 150px;
 
 
 footer{
-    height: $footer-height;
-    @media (min-width: $screen-xs-min) {
-        height: $footer-height-xs;
+    height: $footer-height-xs;
+    @media (max-width: $screen-sm-min) {
+        height: $footer-height;
     }
 
     background-color: $text-color;
@@ -27,8 +27,8 @@ footer{
 }
 
 body{
-    margin-bottom: $footer-height;
-    @media (min-width: $screen-xs-min) {
-        margin-bottom: $footer-height-xs;
+    margin-bottom: $footer-height-xs;
+    @media (min-width: $screen-sm-min) {
+        margin-bottom: $footer-height;
     }
 }
